@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VisitaFácil ACS</title>
+
+<style>
+
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+
+body{
+ font-family:Arial, sans-serif;
+ background:#f4f7fb;
+ color:#333;
+}
+
+.hero{
+ min-height:100vh;
+
+ background:
+ linear-gradient(135deg,#007bff,#00c853);
+
+ color:#fff;
+
+ display:flex;
+ align-items:center;
+ justify-content:center;
+
+ padding:30px;
+}
+
+.container{
+ max-width:1100px;
+ width:100%;
+
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:40px;
+ align-items:center;
+}
+
+.logo{
+ width:100%;
+ height:200px;
+ object-fit:contain;
+ background:#fff;
+ border-bottom:1px solid #eee;
+}
+
+h1{
+ font-size:52px;
+ line-height:1.1;
+ margin-bottom:20px;
+}
+
+p{
+ font-size:20px;
+ line-height:1.6;
+ opacity:0.95;
+ margin-bottom:25px;
+}
+
+.badges{
+ display:flex;
+ flex-wrap:wrap;
+ gap:10px;
+ margin-bottom:25px;
+}
+
+.badge{
+ background:rgba(255,255,255,0.15);
+ padding:10px 16px;
+ border-radius:30px;
+ font-size:14px;
+ backdrop-filter:blur(5px);
+}
+
+.btn{
+ display:inline-block;
+
+ padding:18px 32px;
+
+ background:#fff;
+ color:#007bff;
+
+ border-radius:14px;
+
+ font-size:20px;
+ font-weight:bold;
+
+ text-decoration:none;
+
+ box-shadow:
+ 0 10px 25px rgba(0,0,0,0.2);
+
+ transition:0.2s;
+}
+
+.btn:hover{
+ transform:translateY(-3px);
+}
+
+.video-box{
+ background:#fff;
+ border-radius:20px;
+ padding:15px;
+
+ box-shadow:
+ 0 15px 40px rgba(0,0,0,0.25);
+}
+
+video{
+ width:100%;
+ border-radius:12px;
+}
+
+.section{
+ padding:70px 20px;
+}
+
+.section h2{
+ text-align:center;
+ font-size:38px;
+ margin-bottom:50px;
+}
+
+.cards{
+ max-width:1100px;
+ margin:auto;
+
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+ gap:25px;
+}
+
+.card{
+ background:#fff;
+ padding:30px;
+ border-radius:20px;
+
+ box-shadow:
+ 0 8px 20px rgba(0,0,0,0.08);
+
+ text-align:center;
+}
+
+.card span{
+ font-size:48px;
+ display:block;
+ margin-bottom:15px;
+}
+
+.card h3{
+ margin-bottom:15px;
+ font-size:22px;
+}
+
+.card p{
+ font-size:16px;
+ color:#666;
+ margin:0;
+}
+
+.cta{
+ background:
+ linear-gradient(135deg,#007bff,#00c853);
+
+ color:#fff;
+
+ text-align:center;
+
+ padding:80px 20px;
+}
+
+.cta h2{
+ font-size:42px;
+ margin-bottom:20px;
+}
+
+.cta p{
+ max-width:700px;
+ margin:auto;
+ margin-bottom:30px;
+}
+
+footer{
+ text-align:center;
+ padding:30px;
+ background:#fff;
+ color:#777;
+ font-size:14px;
+}
+
+@media(max-width:900px){
+
+ .container{
+  grid-template-columns:1fr;
+ }
+
+ h1{
+  font-size:40px;
+ }
+
+ p{
+  font-size:18px;
+ }
+
+ .hero{
+  padding-top:50px;
+ }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+
+<div class="container">
+
+<div>
+
+<img src="logo-horizontal.png" class="logo">
+
+<p> </p>
+
+<p>
+O aplicativo profissional para Agentes Comunitários de Saúde realizarem visitas domiciliares com assinatura digital, histórico completo e geração automática de PDF.
+</p>
+
+<div class="badges">
+<div class="badge">✅ Assinatura Digital</div>
+<div class="badge">✅ Relatórios</div>
+<div class="badge">✅ Histórico Completo</div>
+<div class="badge">✅ Funciona Offline</div>
+</div>
+
+<a
+ class="btn"
+ href="SEU_LINK_DO_APK"
+>
+🚀 TESTAR GRÁTIS POR 3 DIAS
+</a>
+
+</div>
+
+<div class="video-box">
+
+<video controls autoplay muted loop playsinline>
+<source src="video-demo.mp4" type="video/mp4">
+Seu navegador não suporta vídeo.
+</video>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- RECURSOS -->
+<section class="section">
+
+<h2>📋 Recursos do Aplicativo</h2>
+
+<div class="cards">
+
+<div class="card">
+<span>✍️</span>
+<h3>Assinatura Digital</h3>
+<p>
+Coleta assinatura diretamente na tela do celular.
+</p>
+</div>
+
+<div class="card">
+<span>📄</span>
+<h3>PDF Automático</h3>
+<p>
+Geração instantânea de comprovante da visita.
+</p>
+</div>
+
+<div class="card">
+<span>📂</span>
+<h3>Histórico Completo</h3>
+<p>
+Todas as visitas organizadas por data.
+</p>
+</div>
+
+<div class="card">
+<span>📊</span>
+<h3>Relatórios</h3>
+<p>
+Resumo automático das visitas realizadas.
+</p>
+</div>
+
+<div class="card">
+<span>📱</span>
+<h3>100% Android</h3>
+<p>
+Leve, rápido e fácil de usar no dia a dia.
+</p>
+</div>
+
+<div class="card">
+<span>⚡</span>
+<h3>Funciona Offline</h3>
+<p>
+Use mesmo sem internet durante as visitas.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+
+<h2>
+🎁 Teste Gratuitamente por 3 Dias
+</h2>
+
+<p>
+Instale agora o VisitaFácil ACS no seu celular Android e veja como o aplicativo pode agilizar seu trabalho nas visitas domiciliares.
+</p>
+
+<a
+ class="btn"
+ href="SEU_LINK_DO_APK"
+>
+📥 BAIXAR APK AGORA
+</a>
+
+</section>
+
+<footer>
+© 2026 VisitaFácil ACS — Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
